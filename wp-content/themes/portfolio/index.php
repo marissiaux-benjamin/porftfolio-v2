@@ -23,10 +23,10 @@ get_header();
     <section class="landing">
         <h1 class="landing__titre">Benjamin <span>Marissiaux</span></h1>
         <p class="landing__description">
-            Je suis un jeune Web Designer
+            Un jeune Web Designer
         </p>
-        <div>
-            <a href="<?= get_field('button-about', 10); ?>" title="Aller vers la page a propos">
+        <div class="landing__btn-container">
+            <a href="<?= get_field('button-about', 10); ?>" title="Aller vers la page a propos" class="landing__btn-container__btn">
                 Me découvrir
             </a>
         </div>

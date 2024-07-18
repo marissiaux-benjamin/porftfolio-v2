@@ -1,0 +1,19 @@
+// 1. cd wp-content/themes/portfolio/ressources/scss
+//2. sass --watch style.scss:../css/style.css
+
+.hidden-title {
+  overflow: hidden !important;
+  font-size: 0 !important;
+  text-indent: -100000px !important;
+  position: absolute;
+}
+
+section{
+  padding-right: 4em;
+  padding-left: 4em;
+}
+
+
+@import "variables";
+@import "header";
+@import "accueil";

@@ -1,5 +1,11 @@
 // 1. cd wp-content/themes/portfolio/ressources/scss
 //2. sass --watch style.scss:../css/style.css
+@import "variables";
+
+html{
+  scroll-behavior: smooth;
+  background-color: $light-green;
+}
 
 .hidden-title {
   overflow: hidden !important;
@@ -9,11 +15,11 @@
 }
 
 section{
-  padding-right: 4em;
-  padding-left: 4em;
+  padding-right: $wrapper;
+  padding-left: $wrapper;
 }
 
 
-@import "variables";
 @import "header";
 @import "accueil";
+@import "footer";

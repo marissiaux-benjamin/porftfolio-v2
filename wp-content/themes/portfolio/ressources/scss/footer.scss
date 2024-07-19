@@ -1,0 +1,84 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5em;
+  padding-bottom: 2em;
+  padding-right: $wrapper;
+  padding-left: $wrapper;
+  background-color: $dark-green;
+  color: $white;
+
+  &__section {
+    padding: 0;
+
+    &__titre {
+      margin-bottom: .6em;
+      font-family: $font-normal;
+      font-size: 1.5em;
+    }
+
+    &__list {
+      font-family: $font-light;
+      font-size: 1em;
+
+      &__item {
+        line-height: 2em;
+
+        &__link, &__mail, &__nav {
+          padding: .5em 1.5em .5em 0;
+          text-decoration: none;
+          color: $white;
+          background-image: url("http://portfolio-v2.test/wp-content/uploads/2024/07/sapin-blanc.svg");
+          background-repeat: no-repeat;
+          background-size: 1em;
+          transition: .4s cubic-bezier(.41, 0, .34, .99);
+        }
+
+        &__nav {
+          background-position: 6em;
+        }
+
+        &__link {
+          background-position: 9.5em;
+        }
+
+        &__mail {
+          background-position: 14em;
+        }
+
+        &__link:hover, &__mail:hover, &__nav:hover {
+          background-position: right;
+        }
+      }
+    }
+  }
+}
+
+.footer:before {
+  display: block;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: $white;
+  border-radius: 3em;
+  margin-bottom: 2em;
+}
+
+.legal-notice-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-light;
+  padding: 1.5em;
+  color: $dark-green;
+
+  a{
+    font-family: $font-normal;
+    text-decoration: none;
+    color: $dark-green;
+  }
+
+  &__credits {
+    display: inline;
+  }
+}

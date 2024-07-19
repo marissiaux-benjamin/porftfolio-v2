@@ -1,7 +1,7 @@
 <footer class="footer">
-    <h2 class="hidden_title">footer</h2>
+    <h2 class="hidden-title">footer</h2>
     <section class="footer__section">
-        <h3 class="footer__section__title">Coordonnées</h3>
+        <h3 class="footer__section__titre">Coordonnées</h3>
         <ul class="footer__section__list">
             <li class="footer__section__list__item">
                 tel&nbsp;:&nbsp;<a href="tel:+32474405122" title="Téléphoner à Benjamin Marissiaux"
@@ -17,18 +17,36 @@
         </ul>
     </section>
     <section class="footer__section">
-        <h3 class="footer__section__title">Navigation</h3>
+        <h3 class="footer__section__titre">Navigation</h3>
         <ul class="footer__section__list">
-            <?php foreach (dw_get_navigation_links('footer') as $link): ?>
-                <li class="footer__section__list__item">
-                    <a class="footer__section__list__item__nav" href="<?= $link->url ?>"
-                       title="Aller vers la page <?= $link->label ?>"><?= $link->label ?></a>
-                </li>
-            <?php endforeach; ?>
+            <li class="footer__section__list__item">
+                <a href="http://portfolio-v2.test/accueil/" title="Aller vers la page d'accueil"
+                   class="footer__section__list__item__nav">
+                    Accueil
+                </a>
+            </li>
+            <li class="footer__section__list__item">
+                <a href="http://portfolio-v2.test/A propos/" title="Aller vers la page a propos"
+                   class="footer__section__list__item__nav">
+                    A propos
+                </a>
+            </li>
+            <li class="footer__section__list__item">
+                <a href="http://portfolio-v2.test/Projets/" title="Aller vers la page projets"
+                   class="footer__section__list__item__nav">
+                    Projets
+                </a>
+            </li>
+            <li class="footer__section__list__item">
+                <a href=" http://portfolio-v2.test/contact/" title="Aller vers la page contact"
+                   class="footer__section__list__item__nav">
+                    Contact
+                </a>
+            </li>
         </ul>
     </section>
     <section class="footer__section">
-        <h3 class="footer__section__title">Réseaux</h3>
+        <h3 class="footer__section__titre">Réseaux</h3>
         <ul class="footer__section__socials-list">
             <li class="footer__section__socials-list__item">
                 <a href="https://www.instagram.com/ben.m.0_o/" title="Aller sur l'instagram de Benjamin Marissiaux"

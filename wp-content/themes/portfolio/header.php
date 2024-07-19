@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?= dw_asset('css/style.css'); ?>">
     <title><?= get_the_title() ?></title>
 </head>
-<body>
+<body >
 <header class="header">
     <h1 class="header__icon">
         <a href="http://portfolio-v2.test/accueil/">

@@ -34,7 +34,8 @@ get_header();
             <p>
                 <?= get_field('text') ?>
             </p>
-            <img src="http://portfolio-v2.test/wp-content/uploads/2024/07/fleche.svg" alt="fleche pointant vers le bas" class="landing__arrow-container__arrow">
+            <img src="http://portfolio-v2.test/wp-content/uploads/2024/07/fleche.svg" alt="fleche pointant vers le bas"
+                 class="landing__arrow-container__arrow">
         </div>
     </section>
 
@@ -42,32 +43,30 @@ get_header();
         <h1 class="cartes-projets__titre">Mes plus gros projets</h1>
 
         <div class="cartes-projets__carte-container">
-            <article class="cartes-projets__carte-container__carte">
-                <a href="#">
-                    <img src="<?= $picture1 ?>" srcset="<?= $picture1 ?>, <?= $carte_cv['sizes']['large'] ?> 2x" alt="<?= $alt_cv ?>" class="cartes-projets__carte-container__carte__image carte-cv">
-                </a>
-                <h2 class="cartes-projets__carte-container__carte__titre">
-                    Projet CV
-                </h2>
-            </article>
+            <div class="cartes-projets__carte-container__carte">
 
-            <article class="cartes-projets__carte-container__carte">
                 <a href="#">
-                    <img src="<?= $picture2 ?>"  alt="<?= $alt_portfolio ?>" class="cartes-projets__carte-container__carte__image carte-portfolio">
+                    <span class="cartes-projets__carte-container__carte__titre">Projet CV</span>
+                    <img src="<?= $picture1 ?>" srcset="<?= $picture1 ?>, <?= $carte_cv['sizes']['large'] ?> 2x"
+                         alt="<?= $alt_cv ?>" class="cartes-projets__carte-container__carte__image carte-cv">
                 </a>
-                <h2 class="cartes-projets__carte-container__carte__titre">
-                    Portfolio
-                </h2>
-            </article>
+            </div>
 
-            <article class="cartes-projets__carte-container__carte">
+            <div class="cartes-projets__carte-container__carte">
                 <a href="#">
-                    <img src="<?= $picture3 ?>"  alt="<?= $alt_sef ?>" class="cartes-projets__carte-container__carte__image carte-sef">
+                    <span class="cartes-projets__carte-container__carte__titre">Portfolio</span>
+                    <img src="<?= $picture2 ?>" alt="<?= $alt_portfolio ?>"
+                         class="cartes-projets__carte-container__carte__image carte-portfolio">
                 </a>
-                <h2 class="cartes-projets__carte-container__carte__titre">
-                    Projet SEF
-                </h2>
-            </article>
+            </div>
+
+            <div class="cartes-projets__carte-container__carte">
+                <a href="#">
+                    <span class="cartes-projets__carte-container__carte__titre">Projet SEF</span>
+                    <img src="<?= $picture3 ?>" alt="<?= $alt_sef ?>"
+                         class="cartes-projets__carte-container__carte__image carte-sef">
+                </a>
+            </div>
         </div>
     </section>
 

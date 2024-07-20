@@ -44,7 +44,7 @@
   }
 
   &__btn-container {
-    margin-top: 5em;
+    margin-top: 3em;
     text-align: center;
   }
 
@@ -75,6 +75,7 @@
     margin-top: 2em;
     display: flex;
     row-gap: 1.5em;
+    column-gap: 2em;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -106,6 +107,83 @@
       &__titre, &__image {
         transition: ease-in-out .5s;
 
+      }
+    }
+  }
+}
+
+@media (max-width: 959px) {
+  .cartes-projets {
+    &__carte-container {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 793px) {
+  .btn, .landing__arrow-container p {
+    font-size: 1.2em;
+  }
+
+  .landing {
+    padding-top: 9em;
+
+    &__titre {
+      font-size: 4em;
+    }
+
+    &__description {
+      font-size: 2.5em;
+    }
+
+    &__btn-container {
+      margin-top: 2em;
+    }
+  }
+  .cartes-projets__titre {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 500px) {
+  .cartes-projets{
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn, .landing__arrow-container p {
+    font-size: 1.2em;
+  }
+
+  .landing {
+    padding-top: 9em;
+
+    &__titre {
+      font-size: 3.5em;
+    }
+
+    &__description {
+      font-size: 2.5em;
+    }
+
+    &__btn-container {
+      margin-top: 2em;
+    }
+  }
+
+  .cartes-projets {
+    &__titre {
+      font-size: 2.5em;
+    }
+
+    &__carte-container {
+      &__carte {
+        &__image {
+          border-radius: 2em;
+          width: 15.5em;
+        }
       }
     }
   }

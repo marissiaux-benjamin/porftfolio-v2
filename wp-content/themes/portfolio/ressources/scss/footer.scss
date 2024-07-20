@@ -52,6 +52,35 @@
         }
       }
     }
+
+    &__socials-list {
+      display: flex;
+      gap: 1.5em;
+
+      &__item {
+
+        &__insta-link, &__github-link, &__linkedin-link {
+          display: inline-block;
+          font-size: 3em;
+          text-indent: -999px;
+          overflow: hidden;
+          background-repeat: no-repeat;
+          width: 1em;
+        }
+
+        &__insta-link {
+          background-image: url("http://portfolio-v2.test/wp-content/uploads/2024/07/instagram_white.svg");
+        }
+
+        &__github-link {
+          background-image: url("http://portfolio-v2.test/wp-content/uploads/2024/07/github_white.svg");
+        }
+
+        &__linkedin-link {
+          background-image: url("http://portfolio-v2.test/wp-content/uploads/2024/07/linkedin_white.svg");
+        }
+      }
+    }
   }
 }
 
@@ -72,7 +101,7 @@
   padding: 1.5em;
   color: $dark-green;
 
-  a{
+  a {
     font-family: $font-normal;
     text-decoration: none;
     color: $dark-green;
@@ -80,5 +109,19 @@
 
   &__credits {
     display: inline;
+  }
+}
+
+@media (max-width: 793px) {
+  .footer{
+    &__section{
+      margin-bottom: 2em;
+    }
+  }
+}
+
+@media (max-width: 542px) {
+  .footer{
+    display: block;
   }
 }

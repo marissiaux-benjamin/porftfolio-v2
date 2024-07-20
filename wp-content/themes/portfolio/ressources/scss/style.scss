@@ -2,24 +2,9 @@
 //2. sass --watch style.scss:../css/style.css
 @import "variables";
 
-html{
-  scroll-behavior: smooth;
-  background-color: $light-green;
-}
-
-.hidden-title {
-  overflow: hidden !important;
-  font-size: 0 !important;
-  text-indent: -100000px !important;
-  position: absolute;
-}
-
-section{
-  padding-right: $wrapper;
-  padding-left: $wrapper;
-}
 
 
+@import "style-global";
 @import "header";
 @import "accueil";
 @import "footer";

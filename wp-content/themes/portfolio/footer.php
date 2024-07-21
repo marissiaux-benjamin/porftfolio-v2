@@ -50,20 +50,23 @@
         <ul class="footer__section__socials-list">
             <li class="footer__section__socials-list__item">
                 <a href="https://www.instagram.com/ben.m.0_o/" title="Aller sur l'instagram de Benjamin Marissiaux"
-                   class="footer__section__socials-list__item__insta-link">
+                   class="footer__section__socials-list__item__insta-link"
+                   target="_blank">
                     insta
                 </a>
             </li>
             <li class="footer__section__socials-list__item">
                 <a href="https://github.com" title="Aller sur le github de Benjamin Marissiaux"
-                   class="footer__section__socials-list__item__github-link">
+                   class="footer__section__socials-list__item__github-link"
+                   target="_blank">
                     github
                 </a>
             </li>
             <li class="footer__section__socials-list__item">
                 <a href="https://www.linkedin.com/in/benjamin-marissiaux-2aa7bb309/"
                    title="Aller sur le linkedin de Benjamin Marissiaux"
-                   class="footer__section__socials-list__item__linkedin-link">
+                   class="footer__section__socials-list__item__linkedin-link"
+                   target="_blank">
                     linkedin
                 </a>
             </li>

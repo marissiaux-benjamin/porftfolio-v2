@@ -41,9 +41,45 @@ get_header();
             <h1 class="etudes__titre">
                 La foret du savoir
             </h1>
-            <img src="<?= $picture_etude ?>"
-                 alt="<?= $alt_cv ?>"
-                 class="landing__presentation__image">
+            <div class="etudes-container">
+                <img src="<?= $picture_etude ?>"
+                     alt="<?= $alt_cv ?>"
+                     class="landing__presentation__image">
+                <div>
+                    <article class="etudes__info">
+                        <h2 class="etudes__info__titre">
+                            <?= get_field('2023-2024', 14) ?>
+                        </h2>
+                        <p class="etudes__info__texte">
+                            <?= get_field('2023-2024-texte', 14) ?>
+                        </p>
+                    </article>
+                    <article class="etudes__info">
+                        <h2 class="etudes__info__titre">
+                            <?= get_field('2022-2023', 14) ?>
+                        </h2>
+                        <p class="etudes__info__texte">
+                            <?= get_field('2022-2023-texte', 14) ?>
+                        </p>
+                    </article>
+                    <article class="etudes__info">
+                        <h2 class="etudes__info__titre">
+                            <?= get_field('2020-2022', 14) ?>
+                        </h2>
+                        <p class="etudes__info__texte">
+                            <?= get_field('2020-2022-texte', 14) ?>
+                        </p>
+                    </article>
+                    <article class="etudes__info">
+                        <h2 class="etudes__info__titre">
+                            <?= get_field('2019-2020', 14) ?>
+                        </h2>
+                        <p class="etudes__info__texte">
+                            <?= get_field('2019-2020-texte', 14) ?>
+                        </p>
+                    </article>
+                </div>
+            </div>
         </div>
     </section>
     <section class="competences">
@@ -53,57 +89,57 @@ get_header();
             </h1>
             <div class="langages-container">
                 <article class="langage">
-                    <h2 class="langages-container__titres">
+                    <h2 class="langage__titre">
                         <?= get_field('langage-css', 14) ?>
                     </h2>
-                    <p class="langages-container__langage__description">
+                    <p class="langage__description">
                         <?= get_field('description-css', 14) ?>
                     </p>
                 </article>
                 <article class="langage">
-                    <h2 class="langages-container__titres">
+                    <h2 class="langage__titre">
                         <?= get_field('langage-scss', 14) ?>
                     </h2>
-                    <p class="langages-container__langage__description">
+                    <p class="langage__description">
                         <?= get_field('description-scss', 14) ?>
                     </p>
                 </article>
                 <article class="langage">
-                    <h2 class="langages-container__titres">
+                    <h2 class="langage__titre">
                         <?= get_field('langage-javascript', 14) ?>
                     </h2>
-                    <p class="langages-container__langage__description">
+                    <p class="langage__description">
                         <?= get_field('description-javascript', 14) ?>
                     </p>
                 </article>
                 <article class="langage">
-                    <h2 class="langages-container__titres">
+                    <h2 class="langage__titre">
                         <?= get_field('langage-sql', 14) ?>
                     </h2>
-                    <p class="langages-container__langage__description">
+                    <p class="langage__description">
                         <?= get_field('description-sql', 14) ?>
                     </p>
                 </article>
                 <article class="langage">
-                    <h2 class="langages-container__titres">
+                    <h2 class="langage__titre">
                         <?= get_field('langage-php', 14) ?>
                     </h2>
-                    <p class="langages-container__langage__description">
+                    <p class="langage__description">
                         <?= get_field('description-php', 14) ?>
                     </p>
                 </article>
-                <aside class="langage-container__contact">
-                    <h2 class="langages-container__titres">
+                <aside class="langage-container__contact langage">
+                    <h2 class="langages-container__contact__titre">
                         Voulez&nbsp;-&nbsp;vous travailler avec moi?
                     </h2>
                     <p>
-                        <a href="">Contacter</a>
+                        <a href="" class="btn-secondaire">Contacter</a>
                     </p>
                 </aside>
             </div>
         </div>
     </section>
-    <section class="">
+    <section class="passions">
         <div class="wrapper">
             <h1 class="passions__titre">
                 Mes passions

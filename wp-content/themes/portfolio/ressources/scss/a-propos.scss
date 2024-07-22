@@ -8,6 +8,7 @@
 
     &__image-container {
       width: 30em;
+
       &__image {
         width: 100%;
         border-radius: 3em;
@@ -16,13 +17,85 @@
 
 
     &__texte {
-      text-align: justify;
       font-family: $font-normal;
       max-width: 45%;
       font-size: 2em;
       line-height: 1.3em;
       color: $white;
       border-radius: 1.5em;
+      text-align: left;
     }
   }
 }
+
+.etudes {
+  color: $white;
+
+  &__titre {
+    font-family: $font-bold;
+    font-size: $titres;
+    color: $white;
+  }
+
+  &__info {
+    &__titre {
+      font-family: $font-normal;
+      font-size: 2em;
+      margin-bottom: .5em;
+    }
+
+    &__texte {
+      font-family: $font-light;
+      font-size: 1.2em;
+    }
+  }
+}
+
+.etudes-container {
+  margin-top: 2em;
+  display: flex;
+}
+
+.competences {
+  background-color: $light-green;
+  color: $dark-green;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  &__titre {
+    font-family: $font-bold;
+    font-size: 3.625em;
+  }
+}
+
+.langages-container {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2em;
+
+  &__contact {
+
+    &__titre {
+      font-family: $font-bold;
+      font-size: 2em;
+    }
+
+  }
+}
+
+.langage {
+  max-width: 30%;
+
+  &__titre {
+    font-family: $font-bold;
+    font-size: 2em;
+    margin-bottom: .5em;
+  }
+
+  &__description {
+    font-family: $font-normal;
+  }
+}
+

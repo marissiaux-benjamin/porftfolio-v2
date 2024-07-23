@@ -128,12 +128,12 @@ get_header();
                         <?= get_field('description-php', 14) ?>
                     </p>
                 </article>
-                <aside class="langage-container__contact langage">
+                <aside class="langages-container__contact langage">
                     <h2 class="langages-container__contact__titre">
                         Voulez&nbsp;-&nbsp;vous travailler avec moi?
                     </h2>
-                    <p>
-                        <a href="" class="btn-secondaire">Contacter</a>
+                    <p class="btn-secondaire-container">
+                        <a href="" class="btn-secondaire-container__btn-secondaire">Contacter</a>
                     </p>
                 </aside>
             </div>

@@ -39,13 +39,13 @@ get_header();
     <section class="etudes">
         <div class="wrapper">
             <h1 class="etudes__titre">
-                La foret du savoir
+                La forêt du savoir
             </h1>
             <div class="etudes-container">
                 <img src="<?= $picture_etude ?>"
                      alt="<?= $alt_cv ?>"
                      class="landing__presentation__image">
-                <div>
+                <div class="experiences">
                     <article class="etudes__info">
                         <h2 class="etudes__info__titre">
                             <?= get_field('2023-2024', 14) ?>

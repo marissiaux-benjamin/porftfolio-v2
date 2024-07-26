@@ -256,7 +256,6 @@
 
 @media (max-width: 1000px) {
 
-
   .landing {
     padding-top: 10em;
 
@@ -278,6 +277,18 @@
       }
     }
   }
+  .etudes {
+    &__info{
+      margin-left: 1em;
+    }
+    &__info:before {
+      display: none;
+    }
+  }
+
+  .experiences{
+    width: initial;
+  }
 
   .langage {
     max-width: 40%;
@@ -295,5 +306,19 @@
       max-width: 100%;
     }
   }
+}
+
+@media (max-width: 793px) {
+  .landing {
+    &__presentation {
+      &__texte {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+@media (max-width: 737px) {
+  
 }
 

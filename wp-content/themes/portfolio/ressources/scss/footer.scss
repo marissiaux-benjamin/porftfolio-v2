@@ -113,17 +113,26 @@
 }
 
 @media (max-width: 793px) {
-  .footer{
-    &__section{
+  .footer {
+    &__section {
       margin-bottom: 2em;
     }
   }
 }
 
 @media (max-width: 550px) {
-  .footer{
+  .footer {
     display: block;
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  .legal-notice-container {
+    display: block;
+
+    p {
+      margin-bottom: 1em;
+    }
+
   }
 }

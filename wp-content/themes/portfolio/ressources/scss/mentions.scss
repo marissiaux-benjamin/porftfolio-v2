@@ -1,0 +1,96 @@
+.background {
+  padding-top: .1em;
+  background-image: url("http://portfolio-v2.test/wp-content/uploads/2024/07/fond-mentions.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2em;
+}
+
+.landing-titre {
+  font-family: $font-bold;
+  font-size: 5em;
+  color: $dark-green;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.mention {
+  text-align: left;
+  color: $white;
+  margin-top: 5em;
+
+
+  &__titre {
+    font-family: $font-bold;
+    font-size: 3em;
+    margin-bottom: .4em;
+  }
+
+  &__texte {
+    font-family: $font-normal;
+    font-size: 1.2em;
+  }
+}
+
+.mention:first-of-type {
+  margin-bottom: 14em;
+  color: $dark-green;
+}
+
+.mention:nth-child(3) {
+  margin-top: initial;
+}
+
+.coordonnees {
+  h1 {
+    margin-bottom: .4em;
+  }
+
+  p {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-family: $font-light;
+
+    span {
+      font-family: $font-bold;
+    }
+  }
+}
+
+@media (max-width: 793px) {
+  .landing-titre {
+    font-size: 4em;
+  }
+
+
+}
+
+@media (max-width: 550px) {
+  .landing-titre {
+    font-size: 3.5em;
+  }
+
+  .coordonnees {
+    h1 {
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  .mention {
+    &__titre {
+      font-size: 2.5em;
+    }
+
+    &__texte {
+      font-size: 1.2em;
+    }
+  }
+
+  .mention:first-of-type {
+    margin-bottom: 5em;
+  }
+}

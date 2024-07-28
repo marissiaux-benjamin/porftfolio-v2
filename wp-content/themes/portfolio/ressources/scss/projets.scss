@@ -7,3 +7,76 @@
     color: $white;
   }
 }
+
+.liste-projets {
+  &__titre {
+    font-family: $font-bold;
+    font-size: $titres;
+    color: $white;
+  }
+}
+
+.projets-container {
+  margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2em;
+  column-gap: 2em;
+
+  &__projet {
+    position: relative;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 3em;
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+
+    p {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
+      color: $white;
+      font-family: $font-normal;
+      font-size: 1.5em;
+      line-height: 1.3em;
+      transition: ease-in-out .4s;
+
+    }
+
+    &__titre {
+      z-index: 1;
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      margin: 0 auto;
+      color: $white;
+      font-family: $font-bold;
+      font-size: 2.5em;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      filter: brightness(60%);
+    }
+  }
+
+  &__projet:hover {
+    p {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      padding-top: 5em;
+      opacity: 1;
+      background-color: rgba($dark-green, .8);
+      height: 100%;
+    }
+  }
+}

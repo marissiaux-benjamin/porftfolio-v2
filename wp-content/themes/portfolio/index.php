@@ -10,7 +10,7 @@ $carte_sef = get_field('projet-sef');
 
 $picture1 = $carte_cv['sizes']['medium'];
 $picture2 = $carte_portfolio['sizes']['medium'];
-$picture3 = $carte_sef['sizes']['medium'];
+$picture3 = $carte_sef['sizes']['large'];
 
 $alt_cv = $carte_cv['alt'];
 $alt_portfolio = $carte_portfolio['alt'];
@@ -47,36 +47,36 @@ get_header();
             <h1 class="cartes-projets__titre">Mes plus gros projets</h1>
 
             <div class="cartes-projets__carte-container">
-                <div class="cartes-projets__carte-container__carte">
+                <article class="cartes-projets__carte-container__carte">
 
                     <a href="#">
-                        <span class="cartes-projets__carte-container__carte__titre">Projet CV</span>
+                        <h2 class="cartes-projets__carte-container__carte__titre">Projet CV</h2>
                         <img src="<?= $picture1 ?>" srcset="<?= $picture1 ?>, <?= $carte_cv['sizes']['large'] ?> 2x"
                              alt="<?= $alt_cv ?>" class="cartes-projets__carte-container__carte__image carte-cv">
                     </a>
-                </div>
+                </article>
 
-                <div class="cartes-projets__carte-container__carte">
+                <article class="cartes-projets__carte-container__carte">
                     <a href="#">
-                        <span class="cartes-projets__carte-container__carte__titre">Portfolio</span>
+                        <h2 class="cartes-projets__carte-container__carte__titre">Portfolio</h2>
                         <img src="<?= $picture2 ?>" alt="<?= $alt_portfolio ?>"
                              class="cartes-projets__carte-container__carte__image carte-portfolio">
                     </a>
-                </div>
+                </article>
 
-                <div class="cartes-projets__carte-container__carte">
+                <article class="cartes-projets__carte-container__carte">
                     <a href="#">
-                        <span class="cartes-projets__carte-container__carte__titre">Projet SEF</span>
+                        <h2 class="cartes-projets__carte-container__carte__titre">Projet SEF</h2>
                         <img src="<?= $picture3 ?>" alt="<?= $alt_sef ?>"
                              class="cartes-projets__carte-container__carte__image carte-sef">
                     </a>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <div class="landing__btn-container">
-        <a href="<?= get_field('button-projets', 10); ?>" title="Aller vers la page a propos" class="btn">
+        <a href="<?= get_field('boutton-projets', 10); ?>" title="Aller vers la page a propos" class="btn">
             Plus de projets
         </a>
     </div>

@@ -1,7 +1,7 @@
 <footer class="footer">
-    <h2 class="hidden-title">footer</h2>
+    <h1 class="hidden-title">footer</h1>
     <section class="footer__section">
-        <h3 class="footer__section__titre">Coordonnées</h3>
+        <h2 class="footer__section__titre">Coordonnées</h2>
         <ul class="footer__section__list">
             <li class="footer__section__list__item">
                 tel&nbsp;:&nbsp;<a href="tel:+32474405122" title="Téléphoner à Benjamin Marissiaux"
@@ -18,7 +18,7 @@
         </ul>
     </section>
     <section class="footer__section">
-        <h3 class="footer__section__titre">Navigation</h3>
+        <h2 class="footer__section__titre">Navigation</h2>
         <ul class="footer__section__list">
             <li class="footer__section__list__item">
                 <a href="http://portfolio-v2.test/accueil/" title="Aller vers la page d'accueil"
@@ -47,7 +47,7 @@
         </ul>
     </section>
     <section class="footer__section">
-        <h3 class="footer__section__titre">Réseaux</h3>
+        <h2 class="footer__section__titre">Réseaux</h2>
         <ul class="footer__section__socials-list">
             <li class="footer__section__socials-list__item">
                 <a href="https://www.instagram.com/ben.m.0_o/" title="Aller sur l'instagram de Benjamin Marissiaux"

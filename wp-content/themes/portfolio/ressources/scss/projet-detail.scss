@@ -1,0 +1,58 @@
+.landing-projet-detail {
+  background-image: url("http://portfolio-v2.test/wp-content/uploads/2024/07/fond-mentions.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 16em;
+  padding-bottom: 10em;
+  text-align: center;
+  color: $dark-green;
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    max-width: initial;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  div {
+    margin-top: 3em;
+  }
+}
+
+.progression {
+  padding-top: 4em;
+
+  h1 {
+    font-family: $font-bold;
+    font-size: $titres;
+    color: $white;
+    margin-bottom: .8em;
+  }
+
+  div {
+    .etape-container {
+      display: flex;
+      column-gap: 2em;
+      padding-top: 2em;
+
+      div {
+        display: initial;
+
+        img {
+          width: 20em;
+          border-radius: 1em;
+        }
+      }
+
+      p {
+        color: $white;
+        font-family: $font-normal;
+        line-height: 1.3em;
+        font-size: 1.2em;
+      }
+    }
+  }
+}

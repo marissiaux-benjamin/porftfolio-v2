@@ -9,6 +9,7 @@
 }
 
 .liste-projets {
+  padding-top: 4em;
   &__titre {
     font-family: $font-bold;
     font-size: $titres;
@@ -29,9 +30,19 @@
     overflow: hidden;
     border-radius: 3em;
 
-    a {
+    &__link {
+      display: block;
+      font-family: $font-light;
       text-decoration: none;
       color: $white;
+      background-image: url("http://portfolio-v2.test/wp-content/uploads/2024/07/suite-fleche.svg");
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: center;
+      margin-top: 1.5em;
+    }
+    a:hover{
+      text-decoration: underline;
     }
 
     p {
@@ -71,9 +82,8 @@
       z-index: 2;
       position: absolute;
       top: 0;
-      width: 100%;
-
-      padding-top: 5em;
+      width: fit-content;
+      padding-top: 3em;
       opacity: 1;
       background-color: rgba($dark-green, .8);
       height: 100%;

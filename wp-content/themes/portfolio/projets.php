@@ -9,7 +9,7 @@ $picture3 = $carte_sef['sizes']['medium'];
 $alt_sef = $carte_sef['alt'];
 
 $carte_cv = get_field('image-projet-cv');
-$picture1 = $carte_sef['sizes']['medium'];
+$picture1 = $carte_cv['sizes']['medium'];
 $alt_cv = $carte_sef['alt'];
 
 $carte_portfolio = get_field('projet-portfolio');
@@ -57,7 +57,7 @@ get_header()
                     </a>
                     <p class="projet__texte">
                         <?= get_field('description-projet-sef', 16) ?>
-                        <a href="#" title="Aller sur la page du projet">D&eacute;couvrir</a>
+                        <a href="#" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
                     </p>
                 </article>
 
@@ -71,7 +71,7 @@ get_header()
                     </a>
                     <p>
                         <?= get_field('description-projet-cv', 16) ?>
-                        <a href="#" title="Aller sur la page du projet">D&eacute;couvrir</a>
+                        <a href="http://portfolio-v2.test/cv/" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
                     </p>
                 </article>
 
@@ -86,7 +86,7 @@ get_header()
                     </a>
                     <p>
                         <?= get_field('description-projet-portfolio', 16) ?>
-                        <a href="#" title="Aller sur la page du projet">D&eacute;couvrir</a>
+                        <a href="#" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
                     </p>
                 </article>
 
@@ -101,7 +101,7 @@ get_header()
                     </a>
                     <p>
                         <?= get_field('description-projet-paint-your-day', 16) ?>
-                        <a href="#" title="Aller sur la page du projet">D&eacute;couvrir</a>
+                        <a href="#" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
                     </p>
                 </article>
 
@@ -115,15 +115,13 @@ get_header()
                              alt="<?= $alt_soundtrekker ?>" class="projets-container__projet__img"/>
                     </a>
                     <p>
-                        <?= get_field('description-sountrekker', 16) ?>
-                        <a href="#" title="Aller sur la page du projet">D&eacute;couvrir</a>
+                        <?= get_field('description-projet-soundtrekker', 16) ?>
+                        <a href="#" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
                     </p>
                 </article>
             </div>
         </section>
     </div>
-
-
 </main>
 
 <?php get_footer() ?>

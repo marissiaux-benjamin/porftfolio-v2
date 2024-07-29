@@ -10,7 +10,7 @@ $carte_sef = get_field('projet-sef');
 
 $picture1 = $carte_cv['sizes']['medium'];
 $picture2 = $carte_portfolio['sizes']['medium'];
-$picture3 = $carte_sef['sizes']['large'];
+$picture3 = $carte_sef['sizes']['medium'];
 
 $alt_cv = $carte_cv['alt'];
 $alt_portfolio = $carte_portfolio['alt'];

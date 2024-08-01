@@ -44,12 +44,12 @@ get_header();
 
     <section class="cartes-projets">
         <div class="wrapper">
-            <h1 class="cartes-projets__titre">Mes plus gros projets</h1>
+            <h1 class="section-titres">Mes plus gros projets</h1>
 
             <div class="cartes-projets__carte-container">
                 <article class="cartes-projets__carte-container__carte">
 
-                    <a href="#">
+                    <a href="http://portfolio-v2.test/cv/">
                         <h2 class="cartes-projets__carte-container__carte__titre">Projet CV</h2>
                         <img src="<?= $picture1 ?>" srcset="<?= $picture1 ?>, <?= $carte_cv['sizes']['large'] ?> 2x"
                              alt="<?= $alt_cv ?>" class="cartes-projets__carte-container__carte__image carte-cv">

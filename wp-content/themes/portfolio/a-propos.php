@@ -38,7 +38,7 @@ get_header();
     </section>
     <section class="etudes">
         <div class="wrapper">
-            <h1 class="etudes__titre">
+            <h1 class="section-titres">
                 La forêt du savoir
             </h1>
             <div class="etudes-container">
@@ -141,7 +141,7 @@ get_header();
     </section>
     <section class="passions">
         <div class="wrapper">
-            <h1 class="passions__titre">
+            <h1 class="section-titres">
                 Mes passions
             </h1>
             <div class="passions-container">

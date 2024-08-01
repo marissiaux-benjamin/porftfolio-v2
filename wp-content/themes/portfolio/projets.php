@@ -45,7 +45,7 @@ get_header()
 
     <div class="wrapper">
         <section class="liste-projets">
-            <h1 class="liste-projets__titre">Liste de mes projets</h1>
+            <h1 class="section-titres">Liste de mes projets</h1>
             <div class="projets-container">
                 <article class="projets-container__projet">
                     <a href="#" title="Aller sur la page du projet SEF">

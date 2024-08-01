@@ -14,7 +14,6 @@
       }
     }
 
-
     &__texte {
       align-self: center;
       font-family: $font-normal;
@@ -32,12 +31,6 @@
   color: $white;
   padding-bottom: 5em;
   padding-top: 5em;
-
-  &__titre {
-    font-family: $font-bold;
-    font-size: $titres;
-    color: $white;
-  }
 
   &__info:before {
     content: '';

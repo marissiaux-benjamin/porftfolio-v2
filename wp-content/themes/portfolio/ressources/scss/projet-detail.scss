@@ -15,22 +15,14 @@
     max-width: initial;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 2em;
   }
 
-  div {
-    margin-top: 3em;
-  }
+
 }
 
 .progression {
   padding-top: 4em;
-
-  h1 {
-    font-family: $font-bold;
-    font-size: $titres;
-    color: $white;
-    margin-bottom: .8em;
-  }
 
   div {
     .etape-container {
@@ -42,7 +34,7 @@
         display: initial;
 
         img {
-          width: 20em;
+          width: 25em;
           border-radius: 1em;
         }
       }
@@ -52,6 +44,60 @@
         font-family: $font-normal;
         line-height: 1.3em;
         font-size: 1.2em;
+      }
+    }
+  }
+}
+
+.galerie {
+  padding-top: 8em;
+
+  &__titre {
+  }
+}
+
+@media (min-width: 2000px) {
+  .landing-projet-detail {
+    background-position-y: 45%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .landing-projet-detail{
+    padding-top: 10em;
+    padding-bottom: 5em;
+  }
+}
+
+@media (max-width: 900px) {
+  .progression {
+    div {
+      .etape-container {
+        div {
+          img {
+            width: 15em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .progression {
+    div {
+      .etape-container {
+        display: initial;
+
+        div {
+          img {
+            display: none;
+          }
+        }
+
+        p {
+          margin-bottom: 2em;
+        }
       }
     }
   }

@@ -48,13 +48,11 @@ get_header()
             <h1 class="section-titres">Liste de mes projets</h1>
             <div class="projets-container">
                 <article class="projets-container__projet">
-                    <a href="#" title="Aller sur la page du projet SEF">
                         <h2 class="projets-container__projet__titre">
                             <?= get_field('titre-projet-sef', 16) ?>
                         </h2>
                         <img src="<?= $picture3 ?>" srcset="<?= $picture3 ?>, <?= $carte_sef['sizes']['large'] ?> 2x"
                              alt="<?= $alt_sef ?>" class="projets-container__projet__img"/>
-                    </a>
                     <p class="projet__texte">
                         <?= get_field('description-projet-sef', 16) ?>
                         <a href="#" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
@@ -62,28 +60,26 @@ get_header()
                 </article>
 
                 <article class="projets-container__projet">
-                    <a href="#">
                         <h2 class="projets-container__projet__titre">
                             <?= get_field('titre-projet-cv', 16) ?>
                         </h2>
                         <img src="<?= $picture1 ?>" srcset="<?= $picture1 ?>, <?= $carte_cv['sizes']['large'] ?> 2x"
                              alt="<?= $alt_cv ?>" class="projets-container__projet__img"/>
-                    </a>
                     <p>
                         <?= get_field('description-projet-cv', 16) ?>
-                        <a href="http://portfolio-v2.test/cv/" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
+                        <a href="http://portfolio-v2.test/cv/" title="Aller sur la page du projet"
+                           class="projets-container__projet__link">D&eacute;couvrir</a>
                     </p>
                 </article>
 
                 <article class="projets-container__projet">
-                    <a href="#">
-                        <h2 class="projets-container__projet__titre">
-                            <?= get_field('titre-projet-portfolio', 16) ?>
-                        </h2>
-                        <img src="<?= $picture2 ?>"
-                             srcset="<?= $picture2 ?>, <?= $carte_portfolio['sizes']['large'] ?> 2x"
-                             alt="<?= $alt_portfolio ?>" class="projet-container__projet__img"/>
-                    </a>
+
+                    <h2 class="projets-container__projet__titre">
+                        <?= get_field('titre-projet-portfolio', 16) ?>
+                    </h2>
+                    <img src="<?= $picture2 ?>"
+                         srcset="<?= $picture2 ?>, <?= $carte_portfolio['sizes']['large'] ?> 2x"
+                         alt="<?= $alt_portfolio ?>" class="projet-container__projet__img"/>
                     <p>
                         <?= get_field('description-projet-portfolio', 16) ?>
                         <a href="#" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
@@ -91,29 +87,25 @@ get_header()
                 </article>
 
                 <article class="projets-container__projet">
-                    <a href="#">
                         <h2 class="projets-container__projet__titre">
                             <?= get_field('titre-projet-paint-your-day', 16) ?>
                         </h2>
                         <img src="<?= $picture4 ?>"
                              srcset="<?= $picture4 ?>, <?= $carte_paint_your_day['sizes']['large'] ?> 2x"
                              alt="<?= $alt_paint_your_day ?>" class="projet-container__projet__img"/>
-                    </a>
                     <p>
                         <?= get_field('description-projet-paint-your-day', 16) ?>
-                        <a href="#" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
+                        <a href="http://portfolio-v2.test/paint-your-day/" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
                     </p>
                 </article>
 
                 <article class="projets-container__projet">
-                    <a href="#">
                         <h2 class="projets-container__projet__titre">
                             <?= get_field('titre-projet-soundtrekker', 16) ?>
                         </h2>
                         <img src="<?= $picture5 ?>"
                              srcset="<?= $picture5 ?>, <?= $carte_soundtrekker['sizes']['large'] ?> 2x"
                              alt="<?= $alt_soundtrekker ?>" class="projets-container__projet__img"/>
-                    </a>
                     <p>
                         <?= get_field('description-projet-soundtrekker', 16) ?>
                         <a href="#" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>

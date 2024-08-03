@@ -52,7 +52,53 @@
 .galerie {
   padding-top: 8em;
 
-  &__titre {
+  &__retour-btn:before {
+    display: inline-block;
+    content: "";
+    width: 3em;
+    height: 1.2em;
+    background-image: url("http://portfolio-v2.test/wp-content/uploads/2024/07/suite-fleche.svg");
+    background-repeat: no-repeat;
+    transform: rotate(180deg) translateY(-5px);
+    margin-right: .6em;
+  }
+
+  &__retour-btn {
+    display: block;
+    font-family: $font-normal;
+    font-size: 1.2em;
+    color: $white;
+    text-decoration: none;
+    margin-top: 1em;
+  }
+
+  &__retour-btn:hover {
+    text-decoration: underline;
+  }
+
+  &__grille {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1em;
+
+    img {
+      width: 25em;
+      height: auto;
+      border-radius: 1em;
+    }
+  }
+
+  &__grille-phone {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1em;
+
+    img {
+      height: 18em;
+      border-radius: 1em;
+    }
   }
 }
 
@@ -60,10 +106,51 @@
   .landing-projet-detail {
     background-position-y: 45%;
   }
+
+  .progression {
+
+    div {
+      .etape-container {
+
+
+        div {
+
+          img {
+            width: 35em;
+            border-radius: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1394px) {
+  .galerie {
+    &__grille {
+      img {
+        width: 25em;
+        height: auto;
+        border-radius: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1165px) {
+  .galerie {
+    &__grille {
+      img {
+        width: 20em;
+        height: auto;
+        border-radius: 1em;
+      }
+    }
+  }
 }
 
 @media (max-width: 1000px) {
-  .landing-projet-detail{
+  .landing-projet-detail {
     padding-top: 10em;
     padding-bottom: 5em;
   }
@@ -78,6 +165,24 @@
             width: 15em;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 937px) {
+  .galerie {
+    &__grille {
+      display: initial;
+
+      img:first-of-type, img:nth-child(2), img:nth-child(3), img:nth-child(4), img:last-of-type {
+        width: 100%;
+        height: auto;
+        border-radius: 1em;
+      }
+
+      img:nth-child(2), img:nth-child(3), img:nth-child(4), img:last-of-type {
+        margin-top: 1em;
       }
     }
   }

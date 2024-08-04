@@ -92,12 +92,24 @@
   &__grille-phone {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     column-gap: 1em;
     row-gap: 1em;
 
     img {
-      height: 18em;
       border-radius: 1em;
+    }
+
+    &__img1 {
+      height: 12em;
+    }
+
+    &__img2 {
+      height: 14em;
+    }
+
+    &__img3 {
+      height: 16em;
     }
   }
 }
@@ -120,6 +132,22 @@
             border-radius: 1em;
           }
         }
+      }
+    }
+  }
+
+  .galerie {
+    &__grille-phone {
+      &__img1 {
+        height: 14em;
+      }
+
+      &__img2 {
+        height: 16em;
+      }
+
+      &__img3 {
+        height: 18em;
       }
     }
   }
@@ -172,6 +200,20 @@
 
 @media (max-width: 937px) {
   .galerie {
+    &__grille-phone {
+      justify-content: space-between;
+
+      &__img1 {
+        width: 100%;
+        height: auto;
+      }
+
+      &__img2, &__img3 {
+        width: 45%;
+        height: auto;
+      }
+    }
+
     &__grille {
       display: initial;
 

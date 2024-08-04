@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: paint your day
+Template Name: soundtrekker
 */
 
 $photo_cv = get_field('etape-1-cv');
@@ -47,10 +47,10 @@ get_header()
     <section class="landing-projet-detail">
         <div class="wrapper">
             <h1 class="landing__titre landing-projet-detail__titre">
-                <?= get_field('titre-page', 242) ?>
+                <?= get_field('titre-page', 279) ?>
             </h1>
             <p class="landing__presentation__texte">
-                <?= get_field('description', 242) ?>
+                <?= get_field('description', 279) ?>
             </p>
         </div>
     </section>
@@ -65,12 +65,12 @@ get_header()
                          alt="<?= $alt ?>" class="projets-container__projet__img"/>
                 </div>
                 <p>
-                    <?= get_field('etape-1', 242) ?>
+                    <?= get_field('etape-1', 279) ?>
                 </p>
             </div>
             <div class="etape-container">
                 <p>
-                    <?= get_field('etape-2', 242) ?>
+                    <?= get_field('etape-2', 279) ?>
                 </p>
                 <div>
                     <img src="<?= $picture2 ?>" srcset="<?= $picture2 ?>, <?= $photo_cv_2['sizes']['large'] ?> 2x"
@@ -83,7 +83,7 @@ get_header()
                          alt="<?= $alt3 ?>" class="projets-container__projet__img"/>
                 </div>
                 <p>
-                    <?= get_field('etape-3', 242) ?>
+                    <?= get_field('etape-3', 279) ?>
                 </p>
             </div>
         </div>
@@ -108,4 +108,5 @@ get_header()
 </main>
 
 <?= get_footer() ?>
+
 

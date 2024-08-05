@@ -31,10 +31,6 @@ $screen_cv_4 = get_field('image-galerie-4');
 $screen4 = $screen_cv_4['sizes']['medium'];
 $alt_screen4 = $screen_cv_4['alt'];
 
-$screen_cv_5 = get_field('image-galerie-5');
-$screen5 = $screen_cv_5['sizes']['medium'];
-$alt_screen5 = $screen_cv_5['alt'];
-
 get_header()
 
 ?>
@@ -48,12 +44,7 @@ get_header()
             <p class="landing__presentation__texte">
                 <?= get_field('description', 309) ?>
             </p>
-            <div class="">
-                <a href="<?= get_field('boutton-site-original', 309) ?>" target="_blank" title=" Voir le vrai site
-                   Direxion" class="btn">
-                    Voir le site Direxion
-                </a>
-            </div>
+
         </div>
     </section>
     <section class="progression">
@@ -92,7 +83,7 @@ get_header()
 
         <div class="landing__btn-container">
             <a href="<?= get_field('bouton-cv', 309); ?>" title="Aller vers la page a propos" class="btn">
-                Aller sur le CV
+                Voir le site du sef
             </a>
         </div>
     </section>
@@ -107,7 +98,6 @@ get_header()
                 <img alt="<?= $alt_screen2 ?>" src="<?= $screen2 ?>" srcset="<?= $screen2 ?>, <?= $screen_cv_2['sizes']['large'] ?> 2x"/>
                 <img alt="<?= $alt_screen3 ?>" src="<?= $screen3 ?>" srcset="<?= $screen3 ?>, <?= $screen_cv_3['sizes']['large'] ?> 2x"/>
                 <img alt="<?= $alt_screen4 ?>" src="<?= $screen4 ?>" srcset="<?= $screen4 ?>, <?= $screen_cv_4['sizes']['large'] ?> 2x"/>
-                <img alt="<?= $alt_screen5 ?>" src="<?= $screen5 ?>" srcset="<?= $screen5 ?>, <?= $screen_cv_5['sizes']['large'] ?> 2x"/>
             </div>
             <a href="http://portfolio-v2.test/projets/" title="Revenir à la page précédente" class="galerie__retour-btn">Retour aux projets</a>
         </div>

@@ -55,7 +55,7 @@ get_header()
                              alt="<?= $alt_sef ?>" class="projets-container__projet__img"/>
                     <p class="projet__texte">
                         <?= get_field('description-projet-sef', 16) ?>
-                        <a href="#" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
+                        <a href="http://portfolio-v2.test/portfolio/" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
                     </p>
                 </article>
 

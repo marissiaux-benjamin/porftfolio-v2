@@ -82,7 +82,7 @@ get_header()
                          alt="<?= $alt_portfolio ?>" class="projet-container__projet__img"/>
                     <p>
                         <?= get_field('description-projet-portfolio', 16) ?>
-                        <a href="#" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
+                        <a href="http://portfolio-v2.test/portfolio-2/" title="Aller sur la page du projet" class="projets-container__projet__link">D&eacute;couvrir</a>
                     </p>
                 </article>
 

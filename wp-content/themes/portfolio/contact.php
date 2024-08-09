@@ -11,35 +11,38 @@ get_header()
 <main class="main-dark-background">
     <section class="landing">
         <div class="wrapper">
-            <h1 class="landing__titre">
-                Contactez&nbsp;-&nbsp;moi&nbsp;!
-            </h1>
-            <p class="landing__texte">
-                Êtes&nbsp;-&nbsp;vous int&eacute;r&eacute;ss&eacute; par mes services&nbsp;? Contactez moi grâce au
-                formulaire ci&nbsp;-&nbsp;dessous.
-            </p>
-            <p>
-                Attention, tous les champs sont obligatoires.
-            </p>
-        </div>
-    </section>
+            <div class="landing__info-contact">
 
-    <section class="formulaire">
-        <div class="wrapper">
+                <h1 class="landing__titre">
+                    Contactez&nbsp;-&nbsp;moi&nbsp;!
+                </h1>
 
-            <form action="#" method="get">
-                <label for="nom">Nom et pr&eacute;nom *</label>
-                <input type="text" id="nom" class="input" placeholder="exemple&nbsp;: Charles Palu">
+                <p>
+                    Faites bien attention &aacute; remplir tous les champs avant d'envoyer votre demande.
+                </p>
+            </div>
+            <div class="formulaire">
+                <form action="#" method="get">
+                    <div class="container-champs">
+                        <input type="text" id="nom" class="input" placeholder="exemple&nbsp;: Charles Palu" required>
+                        <label for="nom">Nom et pr&eacute;nom *</label>
+                    </div>
 
-                <label for="mail">Votre mail *</label>
-                <input type="text" id="mail" class="input" placeholder="exemple&nbsp;: charle@gmail.com">
+                    <div class="container-champs">
+                        <input type="email" id="mail" class="input" placeholder="exemple&nbsp;: charles@gmail.com"
+                               required>
+                        <label for="mail">Votre mail *</label>
+                    </div>
+                    <div class="container-champs">
+                        <textarea name="message" id="message" cols="30" rows="10" class="input"
+                                  placeholder="Bonjour, j'ai vu votre travail et j'aimerais vous contacter pour..."
+                                  required></textarea>
+                        <label for="message" class="label-message">Votre message *</label>
+                    </div>
 
-                <label for="message">Votre message *</label>
-                <textarea name="message" id="message" cols="30" rows="10" class="input"
-                          placeholder="Bonjour, j'ai vu votre travail et j'aimerais vous contacter pour..."></textarea>
-
-                <input type="submit" value="Envoyer" class="">
-            </form>
+                    <input type="submit" value="Envoyer" class="">
+                </form>
+            </div>
         </div>
     </section>
 </main>

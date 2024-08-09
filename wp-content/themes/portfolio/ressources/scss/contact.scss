@@ -1,36 +1,84 @@
 .landing {
-  p:last-of-type {
-    font-size: 1.3em;
+  p {
+    font-size: 2em;
     color: $white;
     font-family: $font-normal;
     margin-top: 1em;
   }
+
+  &__info-contact {
+    margin-bottom: 5em;
+  }
 }
 
 .formulaire {
+  text-align: initial;
+
   form {
     display: flex;
     flex-direction: column;
 
+    .container-champs {
+      position: relative;
+    }
+
     label {
+      z-index: 2;
+      position: absolute;
+      top: 15%;
+      left: 1.7em;
       color: $white;
       font-family: $font-light;
       font-size: 1.5em;
-      background-color: $dark-green;
-      transform: translate(35px, 15px);
       width: fit-content;
-      padding: 0 .3em;
+      transition: .2s ease-in;
+    }
+
+    .label-message {
+      top: 10%;
     }
 
     input, textarea {
+      width: 98%;
+      padding: 1em 2em;
       font-size: 1.2em;
       color: $white;
       border: $white solid 2px;
       border-radius: 5em;
-      background-color: transparent;
-      padding: 1em 2em;
-      margin-bottom: 2.5em;
+      background-color: $dark-green;
+      margin-bottom: 4em;
+
+      &::placeholder {
+        color: transparent;
+      }
     }
+
+    textarea {
+      border-radius: 2em;
+      padding-top: 1.5em;
+      padding-left: 2.5em;
+    }
+
+    input:focus {
+      &::placeholder {
+        color: $white;
+      }
+    }
+
+    textarea:focus {
+      &::placeholder {
+        color: $white;
+      }
+    }
+
+    input:focus ~ label, input:not(:placeholder-shown) ~ label {
+      transform: translateY(-50px);
+    }
+
+    textarea:focus ~ .label-message, textarea:not(:placeholder-shown) ~ .label-message {
+      transform: translateY(-60px);
+    }
+
 
     input[type='submit'] {
       font-size: 1.3em;
@@ -44,15 +92,10 @@
       transition: .5s ease-in-out;
     }
 
-    input[type='submit']:hover{
+    input[type='submit']:hover {
       background-position-y: 25%;
       color: #004F32;
     }
-
-    textarea {
-      border-radius: 2em;
-      margin-bottom: 2em;
-      padding-top: 1.5em;
-    }
   }
 }
+

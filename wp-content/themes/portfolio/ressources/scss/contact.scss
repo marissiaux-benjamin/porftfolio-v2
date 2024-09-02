@@ -45,7 +45,7 @@
       color: $white;
       border: $white solid 2px;
       border-radius: 5em;
-      background-color: $dark-green;
+      background-color: rgba(10,10,10,.5);
       margin-bottom: 4em;
 
       &::placeholder {

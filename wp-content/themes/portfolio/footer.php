@@ -80,6 +80,7 @@
         </p>
         <a href="http://portfolio-v2.test/mentions-legales">Voir les mentions légales</a>
 </div>
+<script type="module" src="<?= dw_asset('js/main.js') ?>" defer></script>
 </body>
 </html>
 

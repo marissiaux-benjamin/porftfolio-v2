@@ -23,24 +23,24 @@ get_header()
             </div>
             <div class="formulaire">
                 <form action="#" method="get">
-                    <div class="container-champs">
+                    <div class="container-champs" data-animation="show">
                         <input type="text" id="nom" class="input" placeholder="exemple&nbsp;: Charles Palu" required>
                         <label for="nom">Nom et pr&eacute;nom *</label>
                     </div>
 
-                    <div class="container-champs">
+                    <div class="container-champs" data-animation="show2">
                         <input type="email" id="mail" class="input" placeholder="exemple&nbsp;: charles@gmail.com"
                                required>
                         <label for="mail">Votre mail *</label>
                     </div>
-                    <div class="container-champs">
+                    <div class="container-champs" data-animation="show3">
                         <textarea name="message" id="message" cols="30" rows="10" class="input"
                                   placeholder="Bonjour, j'ai vu votre travail et j'aimerais vous contacter pour..."
                                   required></textarea>
                         <label for="message" class="label-message">Votre message *</label>
                     </div>
 
-                    <input type="submit" value="Envoyer" class="">
+                    <input type="submit" value="Envoyer" data-animation="show3">
                 </form>
             </div>
         </div>

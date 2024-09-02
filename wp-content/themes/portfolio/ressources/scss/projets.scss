@@ -10,6 +10,7 @@
 
 .liste-projets {
   padding-top: 4em;
+
   &__titre {
     font-family: $font-bold;
     font-size: $titres;
@@ -41,7 +42,8 @@
       background-position: center;
       margin-top: 1.5em;
     }
-    a:hover{
+
+    a:hover {
       text-decoration: underline;
     }
 
@@ -91,8 +93,41 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .projets-container {
+    &__projet {
+      margin-bottom: 2em;
+      padding-bottom: 1.5em;
+      background-color: rgba(0, 0, 0, .4);
+      border-radius: 1.5em;
+
+      p {
+        position: initial;
+        height: initial;
+        width: fit-content;
+      }
+
+      &__titre {
+        top: 30%;
+      }
+    }
+
+
+    &__projet:hover {
+
+      p {
+        background-color: transparent;
+        padding-top: 0;
+        position: initial;
+        width: fit-content;
+        height: initial;
+      }
+    }
+  }
+}
+
 @media (max-width: 959px) {
-  .projets-container{
-      justify-content: center;
+  .projets-container {
+    justify-content: center;
   }
 }

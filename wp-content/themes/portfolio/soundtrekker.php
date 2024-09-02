@@ -46,20 +46,20 @@ get_header()
 <main class="main-dark-background">
     <section class="landing-projet-detail">
         <div class="wrapper">
-            <h1 class="landing__titre landing-projet-detail__titre">
+            <h1 class="landing__titre landing-projet-detail__titre" data-animation="show">
                 <?= get_field('titre-page', 279) ?>
             </h1>
-            <p class="landing__presentation__texte">
+            <p class="landing__presentation__texte" data-animation="show2">
                 <?= get_field('description', 279) ?>
             </p>
         </div>
     </section>
     <section class="progression">
         <div class="wrapper">
-            <h1 class="section-titres">
+            <h1 class="section-titres" data-animation="show">
                 Étapes du projet
             </h1>
-            <div class="etape-container">
+            <div class="etape-container" data-animation="show">
                 <div>
                     <img src="<?= $picture ?>" srcset="<?= $picture ?>, <?= $photo_cv['sizes']['large'] ?> 2x"
                          alt="<?= $alt ?>" class="projets-container__projet__img"/>
@@ -68,7 +68,7 @@ get_header()
                     <?= get_field('etape-1', 279) ?>
                 </p>
             </div>
-            <div class="etape-container">
+            <div class="etape-container" data-animation="show2">
                 <p>
                     <?= get_field('etape-2', 279) ?>
                 </p>
@@ -77,7 +77,7 @@ get_header()
                          alt="<?= $alt2 ?>" class="projets-container__projet__img"/>
                 </div>
             </div>
-            <div class="etape-container">
+            <div class="etape-container" data-animation="show3">
                 <div>
                     <img src="<?= $picture3 ?>" srcset="<?= $picture3 ?>, <?= $photo_cv_3['sizes']['large'] ?> 2x"
                          alt="<?= $alt3 ?>" class="projets-container__projet__img"/>
@@ -91,10 +91,10 @@ get_header()
     <section class="galerie">
         <div class="wrapper">
 
-            <h1 class="section-titres">
+            <h1 class="section-titres" data-animation="show">
                 Galerie
             </h1>
-            <div class="galerie__grille-phone">
+            <div class="galerie__grille-phone" data-animation="show2">
                 <img class="galerie__grille-phone__img1" alt="<?= $alt_screen1 ?>" src="<?= $screen1 ?>" srcset="<?= $screen1 ?>, <?= $screen_cv_1['sizes']['large'] ?> 2x"/>
                 <img class="galerie__grille-phone__img2" alt="<?= $alt_screen2 ?>" src="<?= $screen2 ?>" srcset="<?= $screen2 ?>, <?= $screen_cv_2['sizes']['large'] ?> 2x"/>
                 <img class="galerie__grille-phone__img3" alt="<?= $alt_screen3 ?>" src="<?= $screen3 ?>" srcset="<?= $screen3 ?>, <?= $screen_cv_3['sizes']['large'] ?> 2x"/>
@@ -102,7 +102,7 @@ get_header()
                 <img class="galerie__grille-phone__img2" alt="<?= $alt_screen5 ?>" src="<?= $screen5 ?>" srcset="<?= $screen5 ?>, <?= $screen_cv_5['sizes']['large'] ?> 2x"/>
                 <img class="galerie__grille-phone__img1" alt="<?= $alt_screen6 ?>" src="<?= $screen6 ?>" srcset="<?= $screen6 ?>, <?= $screen_cv_6['sizes']['large'] ?> 2x"/>
             </div>
-            <a href="http://portfolio-v2.test/projets/" title="Revenir à la page précédente" class="galerie__retour-btn">Retour aux projets</a>
+            <a href="http://portfolio-v2.test/projets/" title="Revenir à la page précédente" class="galerie__retour-btn" data-animation="show3">Retour aux projets</a>
         </div>
     </section>
 </main>

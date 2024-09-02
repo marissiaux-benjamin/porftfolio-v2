@@ -1,0 +1,33 @@
+.hidden {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.hidden2{
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+[class*="show-"] {
+  opacity: 1;
+  transform: translateY(0);
+  transition: .5s cubic-bezier(.38,-0.01,.22,.99);
+}
+
+[class*="slide-"] {
+  opacity: 1;
+  transform: translatex(0);
+  transition: .5s cubic-bezier(.38,-0.01,.22,.99);
+}
+
+.show-2 {
+  transition-delay: .3s;
+}
+
+.show-3 {
+  transition-delay: .6s;
+}
+
+.slide-left{
+  transition-delay: .5s;
+}

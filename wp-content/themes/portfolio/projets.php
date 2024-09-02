@@ -31,10 +31,10 @@ get_header()
 <main class="main-dark-background">
     <section class="landing">
         <div class="wrapper">
-            <h1 class="landing__titre">
+            <h1 class="landing__titre" data-animation="show">
                 Mes projets
             </h1>
-            <p class="landing__texte">
+            <p class="landing__texte" data-animation="show2">
                 Cette page regroupe l&rsquo;ensemble de mes projets et peut vous donner une id&eacute;e de ma façon de
                 faire et de
                 voir
@@ -45,9 +45,9 @@ get_header()
 
     <div class="wrapper">
         <section class="liste-projets">
-            <h1 class="section-titres">Liste de mes projets</h1>
+            <h1 class="section-titres" data-animation="show">Liste de mes projets</h1>
             <div class="projets-container">
-                <article class="projets-container__projet">
+                <article class="projets-container__projet" data-animation="show2">
                         <h2 class="projets-container__projet__titre">
                             <?= get_field('titre-projet-sef', 16) ?>
                         </h2>
@@ -59,7 +59,7 @@ get_header()
                     </p>
                 </article>
 
-                <article class="projets-container__projet">
+                <article class="projets-container__projet" data-animation="show2">
                         <h2 class="projets-container__projet__titre">
                             <?= get_field('titre-projet-cv', 16) ?>
                         </h2>
@@ -72,7 +72,7 @@ get_header()
                     </p>
                 </article>
 
-                <article class="projets-container__projet">
+                <article class="projets-container__projet" data-animation="show2">
 
                     <h2 class="projets-container__projet__titre">
                         <?= get_field('titre-projet-portfolio', 16) ?>
@@ -86,7 +86,7 @@ get_header()
                     </p>
                 </article>
 
-                <article class="projets-container__projet">
+                <article class="projets-container__projet" data-animation="show3">
                         <h2 class="projets-container__projet__titre">
                             <?= get_field('titre-projet-paint-your-day', 16) ?>
                         </h2>
@@ -99,7 +99,7 @@ get_header()
                     </p>
                 </article>
 
-                <article class="projets-container__projet">
+                <article class="projets-container__projet" data-animation="show3">
                         <h2 class="projets-container__projet__titre">
                             <?= get_field('titre-projet-soundtrekker', 16) ?>
                         </h2>

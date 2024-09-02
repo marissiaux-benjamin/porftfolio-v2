@@ -1,11 +1,11 @@
 // style générique qui s'applique à toutes les pages
 
-html{
+html {
   scroll-behavior: smooth;
   background-color: $light-green;
 }
 
-.wrapper{
+.wrapper {
   max-width: 70%;
   margin: 0 auto;
 }
@@ -17,7 +17,7 @@ html{
   position: absolute;
 }
 
-.section-titres{
+.section-titres {
   font-family: $font-bold;
   font-size: $titres;
   color: $white;
@@ -25,13 +25,13 @@ html{
 }
 
 @media (max-width: 470px) {
-  .section-titres{
+  .section-titres {
     font-size: 2.9em;
   }
 }
 
 @media (max-width: 500px) {
-  .wrapper{
+  .wrapper {
     max-width: fit-content;
   }
 }

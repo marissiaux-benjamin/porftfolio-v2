@@ -22,15 +22,15 @@ get_header();
 <main class="main-dark-background">
     <section class="landing">
         <div class="wrapper">
-            <h1 class="landing__titre">
+            <h1 class="landing__titre" data-animation="show">
                 Qui suis-je&nbsp;?
             </h1>
             <div class="landing__presentation">
-                <div class="landing__presentation__image-container">
+                <div class="landing__presentation__image-container" data-animation="show2">
                     <img src="<?= $picture ?>" srcset="<?= $picture ?>, <?= $photo_presentation['sizes']['large'] ?> 2x"
                          alt="<?= $alt_cv ?>" class="landing__presentation__image-container__image">
                 </div>
-                <p class="landing__presentation__texte">
+                <p class="landing__presentation__texte" data-animation="show3">
                     <?= get_field('presentation', 14) ?>
                 </p>
             </div>
@@ -38,14 +38,14 @@ get_header();
     </section>
     <section class="etudes">
         <div class="wrapper">
-            <h1 class="section-titres">
+            <h1 class="section-titres" data-animation="show">
                 La forêt du savoir
             </h1>
             <div class="etudes-container">
                 <img src="<?= $picture_etude ?>"
                      alt="<?= $alt_cv ?>"
-                     class="landing__presentation__image">
-                <div class="experiences">
+                     class="landing__presentation__image" data-animation="show">
+                <div class="experiences" data-animation="slide">
                     <article class="etudes__info">
                         <h2 class="etudes__info__titre">
                             <?= get_field('2023-2024', 14) ?>
@@ -84,11 +84,11 @@ get_header();
     </section>
     <section class="competences">
         <div class="wrapper">
-            <h1 class="competences__titre">
+            <h1 class="competences__titre" data-animation="show">
                 Mes compétences
             </h1>
             <div class="langages-container">
-                <article class="langage">
+                <article class="langage" data-animation="show2">
                     <h2 class="langage__titre">
                         <?= get_field('langage-css', 14) ?>
                     </h2>
@@ -96,7 +96,7 @@ get_header();
                         <?= get_field('description-css', 14) ?>
                     </p>
                 </article>
-                <article class="langage">
+                <article class="langage" data-animation="show2">
                     <h2 class="langage__titre">
                         <?= get_field('langage-scss', 14) ?>
                     </h2>
@@ -104,7 +104,7 @@ get_header();
                         <?= get_field('description-scss', 14) ?>
                     </p>
                 </article>
-                <article class="langage">
+                <article class="langage" data-animation="show2">
                     <h2 class="langage__titre">
                         <?= get_field('langage-javascript', 14) ?>
                     </h2>
@@ -112,7 +112,7 @@ get_header();
                         <?= get_field('description-javascript', 14) ?>
                     </p>
                 </article>
-                <article class="langage">
+                <article class="langage" data-animation="show3">
                     <h2 class="langage__titre">
                         <?= get_field('langage-sql', 14) ?>
                     </h2>
@@ -120,7 +120,7 @@ get_header();
                         <?= get_field('description-sql', 14) ?>
                     </p>
                 </article>
-                <article class="langage">
+                <article class="langage" data-animation="show3">
                     <h2 class="langage__titre">
                         <?= get_field('langage-php', 14) ?>
                     </h2>
@@ -128,12 +128,12 @@ get_header();
                         <?= get_field('description-php', 14) ?>
                     </p>
                 </article>
-                <aside class="langages-container__contact langage">
+                <aside class="langages-container__contact langage" data-animation="show3">
                     <h2 class="langages-container__contact__titre">
                         Voulez&nbsp;-&nbsp;vous travailler avec moi?
                     </h2>
                     <p class="btn-secondaire-container">
-                        <a href="" class="btn-secondaire-container__btn-secondaire">Contacter</a>
+                        <a href="http://portfolio-v2.test/contact/" class="btn-secondaire-container__btn-secondaire">Contacter</a>
                     </p>
                 </aside>
             </div>
@@ -141,16 +141,16 @@ get_header();
     </section>
     <section class="passions">
         <div class="wrapper">
-            <h1 class="section-titres">
+            <h1 class="section-titres" data-animation="show">
                 Mes passions
             </h1>
             <div class="passions-container">
-                <div>
+                <div data-animation="show2">
                     <img src="<?= $picture_passions ?>"
                          srcset="<?= $picture_passions ?>, <?= $image_passions['sizes']['large'] ?> 2x"
                          alt="<?= $alt_passions ?>">
                 </div>
-                <p>
+                <p data-animation="show3">
                     <?= get_field('texte-passions', 14) ?>
                 </p>
             </div>

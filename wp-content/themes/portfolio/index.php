@@ -22,16 +22,16 @@ get_header();
 <main class="main-dark-background">
     <section class="landing">
         <div class="wrapper">
-            <h1 class="landing__titre">Benjamin <span>Marissiaux</span></h1>
-            <p class="landing__description">
+            <h1 class="landing__titre" data-animation="show">Benjamin <span>Marissiaux</span></h1>
+            <p class="landing__description" data-animation="show">
                 Un jeune Web Designer
             </p>
-            <div class="landing__btn-container">
+            <div class="landing__btn-container" data-animation="show">
                 <a href="<?= get_field('button-about', 10); ?>" title="Aller vers la page a propos" class="btn">
                     Me découvrir
                 </a>
             </div>
-            <div class="landing__arrow-container">
+            <div class="landing__arrow-container" data-animation="show2">
                 <p>
                     <?= get_field('text') ?>
                 </p>
@@ -44,11 +44,10 @@ get_header();
 
     <section class="cartes-projets">
         <div class="wrapper">
-            <h1 class="section-titres">Mes plus gros projets</h1>
+            <h1 class="section-titres" data-animation="show">Mes plus gros projets</h1>
 
-            <div class="cartes-projets__carte-container">
-                <article class="cartes-projets__carte-container__carte">
-
+            <div class="cartes-projets__carte-container" >
+                <article class="cartes-projets__carte-container__carte" data-animation="show">
                     <a href="http://portfolio-v2.test/cv/">
                         <h2 class="cartes-projets__carte-container__carte__titre">Projet CV</h2>
                         <img src="<?= $picture1 ?>" srcset="<?= $picture1 ?>, <?= $carte_cv['sizes']['large'] ?> 2x"
@@ -56,7 +55,7 @@ get_header();
                     </a>
                 </article>
 
-                <article class="cartes-projets__carte-container__carte">
+                <article class="cartes-projets__carte-container__carte" data-animation="show2">
                     <a href="#">
                         <h2 class="cartes-projets__carte-container__carte__titre">Portfolio</h2>
                         <img src="<?= $picture2 ?>" alt="<?= $alt_portfolio ?>"
@@ -64,7 +63,7 @@ get_header();
                     </a>
                 </article>
 
-                <article class="cartes-projets__carte-container__carte">
+                <article class="cartes-projets__carte-container__carte" data-animation="show3">
                     <a href="#">
                         <h2 class="cartes-projets__carte-container__carte__titre">Projet SEF</h2>
                         <img src="<?= $picture3 ?>" alt="<?= $alt_sef ?>"
@@ -75,7 +74,7 @@ get_header();
         </div>
     </section>
 
-    <div class="landing__btn-container">
+    <div class="landing__btn-container" data-animation="show3">
         <a href="<?= get_field('boutton-projets', 10); ?>" title="Aller vers la page a propos" class="btn">
             Plus de projets
         </a>

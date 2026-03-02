@@ -1,4 +1,1 @@
-Projet Portfolio
-
-lien vers le site:
-https://portfolio.benjamin-marissiaux.be/
+Projet Portfolio est un projet réalisé comme examen de fin de 2e BAC.
